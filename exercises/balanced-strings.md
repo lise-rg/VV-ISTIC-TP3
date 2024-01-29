@@ -31,7 +31,7 @@ For this exercise, we choosed to understand the subject like, a string can only 
 You have the methode isBalanced ![HERE](https://github.com/lise-rg/VV-ISTIC-TP3/blob/main/code/tp3-balanced-strings/src/main/java/fr/istic/vv/StringUtils.java)
 
 1 .
-We partinioned the possible inputs for our programm in the following blocks :
+We partionned the possible inputs for our programm in the following blocks :
 
 | Characteristics  | Blocks  | Blocks |
 | :----------------------- |:------------------------:| --:|
