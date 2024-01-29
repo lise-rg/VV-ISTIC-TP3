@@ -29,3 +29,24 @@ Use the project in [tp3-balanced-strings](../code/tp3-balanced-strings) to compl
 For this exercise, we choosed to understand the subject like, a string can only contains symbols `{}, [], ()` or the empty string `""`. So `"(a"` is not accepted.
 
 You have the methode isBalanced ![HERE](https://github.com/lise-rg/VV-ISTIC-TP3/blob/main/code/tp3-balanced-strings/src/main/java/fr/istic/vv/StringUtils.java)
+
+1 .
+We partinioned the possible inputs for our programm in the following blocks :
+
+| Characteristics  | Blocks  | Blocks |
+| :----------------------- |:------------------------:| --:|
+| empty  |   Balanced         |
+| null  | NullPointerException
+| string is "()" or "[]" or "{}" | YES ? -> Balanced | NO ? -> Unbalanced
+| string has a balanced string into another  | YES ? -> Balanced | NO ? -> Unbalanced
+|equal number of opening and closing symbols of each kind |   YES ? -> Undecided | NO ? -> Unbalanced
+| string is a sequence of balanced strings| YES ? -> Balanced | NO ? -> Unbalanced
+
+So we made our test to have all our partitioning covered. 
+2 .
+Our coverage was at 100% after creation of our tests.
+
+3 .
+
+4 .
+You can see the result of our pit test ![HERE](https://github.com/lise-rg/VV-ISTIC-TP3/blob/main/exercises/pit%20report%20balanced%20string.png)
