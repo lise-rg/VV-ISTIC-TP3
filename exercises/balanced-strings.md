@@ -26,12 +26,12 @@ Use the project in [tp3-balanced-strings](../code/tp3-balanced-strings) to compl
 
 ## Answer
 
-For this exercise, we choosed to understand the subject like, a string can only contains symbols `{}, [], ()` or the empty string `""`. So `"(a"` is not accepted.
+For this exercise, we chose to understand the subject like, a string can only contain symbols `{}, [], ()` or the empty string `""`. So `"(a"` is not accepted.
 
 You have the methode isBalanced ![HERE](https://github.com/lise-rg/VV-ISTIC-TP3/blob/main/code/tp3-balanced-strings/src/main/java/fr/istic/vv/StringUtils.java)
 
 1 .
-We partionned the possible inputs for our programm in the following blocks :
+We partitioned the possible inputs for our program into the following blocks :
 
 | Characteristics  | Blocks  | Blocks |
 | :----------------------- |:------------------------:| --:|
@@ -43,11 +43,14 @@ We partionned the possible inputs for our programm in the following blocks :
 | string is a sequence of balanced strings| YES ? -> Balanced | NO ? -> Unbalanced
 
 So we made our test to have all our partitioning covered. 
-2 .
-Our coverage was at 100% after creation of our tests.
 
-3 .
+2 .
+Our coverage was at 100% after the creation of our tests.
+
+3 . 
+We have three conditions with only "&&" and as we know our coverage is 100% the conditions have necessarily been covered.
+We also have one condition with "||" and we have already added all necessary tests to cover all cases.
 
 4 .
-You can see the result of our pit test with the command : `mvn test-compile org.pitest:pitest-maven:mutationCoverage`
+You can see the result of our pit test with the command: `mvn test-compile org.pitest:pitest-maven:mutationCoverage`
  ![HERE](https://github.com/lise-rg/VV-ISTIC-TP3/blob/main/exercises/pit%20report%20balanced%20string.png)
