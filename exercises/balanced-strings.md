@@ -49,4 +49,5 @@ Our coverage was at 100% after creation of our tests.
 3 .
 
 4 .
-You can see the result of our pit test ![HERE](https://github.com/lise-rg/VV-ISTIC-TP3/blob/main/exercises/pit%20report%20balanced%20string.png)
+You can see the result of our pit test with the command : `mvn test-compile org.pitest:pitest-maven:mutationCoverage`
+ ![HERE](https://github.com/lise-rg/VV-ISTIC-TP3/blob/main/exercises/pit%20report%20balanced%20string.png)
