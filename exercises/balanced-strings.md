@@ -26,3 +26,6 @@ Use the project in [tp3-balanced-strings](../code/tp3-balanced-strings) to compl
 
 ## Answer
 
+For this exercise, we choosed to understand the subject like, a string can only contains symbols `{}, [], ()` or the empty string `""`. So `"(a"` is not accepted.
+
+You have the methode isBalanced ![HERE](https://github.com/lise-rg/VV-ISTIC-TP3/blob/main/code/tp3-balanced-strings/src/main/java/fr/istic/vv/StringUtils.java)
