@@ -52,6 +52,24 @@ Use the following steps to design the test suite:
 Use the project in [tp3-date](../code/tp3-date) to complete this exercise.
 
 ## Answer
+
+1 . We partionned the possible inputs for our programm in the following blocks :
+
+| Characteristics  | Blocks  |  | | |
+| :----------------------- |:------------------------:| --:|--:|--:|
+| Value of day 	|< 0	| 0    |  [1;MAX(month,year)] | > MAX(month,year)|
+| Value of month  |< 0	| 0    | [1;12]|> 12
+| Value of year | < 0 | 0    | leap year | valid common year
+
+So we made our test to have all our partitioning covered. 
+
+2 .
+Our coverage was at 100% after creation of our tests.
+
 3.
 Regarding the conditions with only "&&", as we know our coverage is 100%, the conditions have necessarily been tested.
 As for the "||" condition, it is a very simple one and we can see that all of the conditions are tested in our tests.
+
+4 .
+
+You can see the result of our pit test ![HERE](https://github.com/lise-rg/VV-ISTIC-TP3/blob/main/exercises/pir%20report%20date.png)
