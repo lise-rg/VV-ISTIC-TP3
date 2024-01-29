@@ -64,14 +64,14 @@ Use the project in [tp3-date](../code/tp3-date) to complete this exercise.
 So we made our test to have all our partitioning covered. 
 
 2 .
-Our coverage was at 100% after creation of our tests.
+Our coverage was at 100% after the creation of our tests.
 
 3.
 Regarding the conditions with only "&&", as we know our coverage is 100%, the conditions have necessarily been tested.
 As for the "||" condition, it is a very simple one and we can see that all of the conditions are tested in our tests.
 
 4 .
-
+When we used pit for the first try, we had something like 74% of mutation coverage. We added new tests and now we are at 94%. We can not do better because one of the mutation is impossible to catch with a test (leap year with the boolean between "||").
 You can see the result of our pit test : 
 
 ![HERE](https://github.com/lise-rg/VV-ISTIC-TP3/blob/main/exercises/pir%20report%20date.png)
