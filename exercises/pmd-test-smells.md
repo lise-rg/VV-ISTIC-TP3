@@ -43,4 +43,4 @@ We selected an example of TooManyAsserts in the file : `commons-math\commons-mat
   }
     }
 ```
-We can see that that there is more that 1 assert in the same test. We can correct it with making 1 test per function tested.
+We can see that there is more that 1 assert in the same test. We can correct it with making only one test per function tested (one test per assert).
