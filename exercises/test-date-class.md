@@ -52,4 +52,6 @@ Use the following steps to design the test suite:
 Use the project in [tp3-date](../code/tp3-date) to complete this exercise.
 
 ## Answer
-
+3.
+Regarding the conditions with only "&&", as we know our coverage is 100%, the conditions have necessarily been tested.
+As for the "||" condition, it is a very simple one and we can see that all of the conditions are tested in our tests.
