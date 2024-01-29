@@ -54,4 +54,10 @@ class StringUtilsTest {
         boolean result = su.isBalanced(sTest);
         assertEquals(result,false);
     }
+    @Test
+    void testisBalanced8(){
+        String sTest = "{()}";
+        boolean result = su.isBalanced(sTest);
+        assertEquals(result,true);
+    }
 }
