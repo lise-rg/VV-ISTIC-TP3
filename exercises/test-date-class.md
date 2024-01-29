@@ -72,4 +72,6 @@ As for the "||" condition, it is a very simple one and we can see that all of th
 
 4 .
 
-You can see the result of our pit test ![HERE](https://github.com/lise-rg/VV-ISTIC-TP3/blob/main/exercises/pir%20report%20date.png)
+You can see the result of our pit test : 
+
+![HERE](https://github.com/lise-rg/VV-ISTIC-TP3/blob/main/exercises/pir%20report%20date.png)
