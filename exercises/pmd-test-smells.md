@@ -15,3 +15,34 @@ Include the improved test code in this file.
 
 ## Answer
 
+`JUnitTestContainsTooManyAsserts`, the rule that we choosed corresponds to the Assertion Roulette seen in class.
+
+The project that we choosed is `Apache Commons Math`.
+
+We used the following pmd check command : `pmd check -f html -R category/java/bestpractices.xml/JUnitTestContainsTooManyAsserts -d "commons-math" -r "tp3pmd.html"`
+
+We selected an example of TooManyAsserts in the file : `commons-math\commons-math-legacy\src\test\java\org\apache\commons\math4\legacy\ode\nonstiff\GillIntegratorTest.java` line 101 :
+
+``` java
+      @Test
+  public void testSmallStep()
+        throws DimensionMismatchException, NumberIsTooSmallException,
+            MaxCountExceededException, NoBracketingException {
+
+        TestProblem1 pb = new TestProblem1();
+        double step = (pb.getFinalTime() - pb.getInitialTime()) * 0.001;
+    
+        FirstOrderIntegrator integ = new GillIntegrator(step);
+        TestProblemHandler handler = new TestProblemHandler(pb, integ);
+        integ.addStepHandler(handler);
+        integ.integrate(pb, pb.getInitialTime(), pb.getInitialState(),
+                        pb.getFinalTime(), new double[pb.getDimension()]);
+    
+        Assert.assertTrue(handler.getLastError() < 2.0e-13);
+        Assert.assertTrue(handler.getMaximalValueError() < 4.0e-12);
+        Assert.assertEquals(0, handler.getMaximalTimeError(), 1.0e-12);
+        Assert.assertEquals("Gill", integ.getName());
+  }
+    }
+```
+We can see that there is more that 1 assert in the same test. We can correct it with making only one test per function tested (one test per assert).
