@@ -17,6 +17,8 @@ Include the improved test code in this file.
 
 `JUnitTestContainsTooManyAsserts`, the rule that we choosed corresponds to the Assertion Roulette seen in class.
 
+The project that we choosed is `Apache Commons Math`.
+
 We used the following pmd check command : `pmd check -f html -R category/java/bestpractices.xml/JUnitTestContainsTooManyAsserts -d "commons-math" -r "tp3pmd.html"`
 
 We selected an example of TooManyAsserts in the file : `commons-math\commons-math-legacy\src\test\java\org\apache\commons\math4\legacy\ode\nonstiff\GillIntegratorTest.java` line 101 :
